@@ -13,4 +13,4 @@ var alunosReprovados = alunos.every(function(aluno){
 })
 console.log(alunosReprovados)
 
-// o find sempre retornará um único registro sendo o primeiro da lista
+// retorna um boolean sendo se todos os items do array correspondem a uma condição retonará true caso contrário false

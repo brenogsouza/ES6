@@ -8,9 +8,12 @@ var alunos = [
 	{nome: 'Gabriel', idade: 12, status: 'Reprovado'}
 ]
 
-var alunosReprovados = alunos.every(function(aluno){
-	return aluno.status === "Reprovado"
-})
+var alunosReprovados = true
+for (var i = 0; i < alunos.length; i++){
+	var reprovados = alunos[i];
+	if(reprovados.status !== 'Reprovado') {
+		alunosReprovados = false;
+		break
+	}
+}
 console.log(alunosReprovados)
-
-// o find sempre retornará um único registro sendo o primeiro da lista
