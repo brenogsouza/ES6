@@ -8,7 +8,13 @@ var alunos = [
 	{nome: 'Gabriel', idade: 12, status: 'Reprovado'}
 ]
 
-var alunoReprovado = alunos.find(function(aluno){
-	return aluno.status ==='Reprovado'
-})
-console.log(alunoReprovado)
+var alunosReprovados = []
+
+for(var i=0; i < alunos.length; i++ ) {
+	var aluno = alunos[i]
+	if(aluno.status === 'Reprovado') {
+		alunosReprovados = aluno
+		break
+	}
+}
+console.log(alunosReprovados)

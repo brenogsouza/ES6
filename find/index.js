@@ -12,3 +12,5 @@ var alunoReprovado = alunos.find(function(aluno){
 	return aluno.status ==='Reprovado'
 })
 console.log(alunoReprovado)
+
+// o find sempre retornará um único registro sendo o primeiro da lista
