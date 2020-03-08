@@ -8,7 +8,14 @@ var alunos = [
 	{nome: 'Gabriel', idade: 12, materia: 'Física'}
 ]
 
-var temPortugues  = alunos.some(function(portugues){
-	return portugues.materia === 'Portugês'
-})
+var temPortugues = false
+for (var i = 0; i < alunos.length; i++){
+	var portugues = alunos[i];
+	if(portugues.materia === 'Portugês') {
+		temPortugues = true;
+		break
+	}
+}
 console.log('Tem matéria de Portugês?', temPortugues)
+
+// verifica se tem se os items correspondem a condicão
